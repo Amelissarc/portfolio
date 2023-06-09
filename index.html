@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa Rincón</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- HEADER -->
+</head>
+<body class="mobile-menu active">
+
+    <!-- Encabezado -->
+    <header>
+        <!-- Link a inicio -->
+        <a href="#logo">
+            <img src="" alt="" class="logo">       
+        </a>  
+        
+        <!-- Maquetar botón hamburguesa -->
+        
+        <button id="menu-button">
+            <img src="img/bars-solid.svg" id="open-menu">
+            <img src="img/x-solid.svg" id="close-menu">
+        </button>
+        
+        <!-- Menú de selección -->
+        
+        <nav>
+            <ul id="menu">  
+                <li class="menu-item active">
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                
+                <!--Contacto -->
+                <li class="menu-item">
+                    <a href="#contacto">Contacto</a>
+                </li>  
+            </ul>      
+        </nav>
+        
+    </header>
+    
+    <!-- Contenido -->       
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio">
+            <figure class="presentacion">
+                <img src="./img/unnamed.jpg" alt="Foto de melissa" class="foto"> 
+            </figure>
+            <!-- -la imagen va fuera del articulo, pero dentro de la section-->    
+            <article class="presentacion">
+                <h1>¡Hola! Soy Melissa.
+                <br>Desarrolladora Front end.</h1>
+                
+                <h3>Encantada de conocerte🤗</h3>
+                <p>
+                    Mi viaje en el mundo del desarrollo comenzó hace un año, y desde entonces he estado inmersa en la creación de sitios web responsivos y funcionales utilizando tecnologías como HTML, CSS, JavaScript, React. Además, tengo experiencia en el manejo de frameworks como Bootstrap, Tailwind entre otros. Me encanta explorar las últimas tendencias en diseño y desarrollo web para brindar experiencias excepcionales a los usuarios, me apasiona la creación de interfaces intuitivas y atractivas. <br><br>
+                    
+                    Además, estoy comprometida con mi desarrollo profesional y siempre estoy buscando oportunidades para ampliar mis habilidades. Actualmente, me estoy formando para convertirme en una desarrolladora Full Stack, lo que me permitirá abordar proyectos más complejos y desafiantes.   
+                </p>   
+                <a class="button" href="#proyectos">
+                    Ver proyectos 
+                </a>  
+            </article> 
+            
+        </section>   
+
+         <!-- Sección de Contacto -->
+         <section id="contacto">    
+            <article class="hablemos">
+                <h2>¡Es un placer tenerte aquí, <br> te invito a explorar mi trabajo!</h2>
+                <p>En mi portfolio web, encontrarás ejemplos de mis proyectos anteriores, donde podrás apreciar mi enfoque en la usabilidad, la estética y la funcionalidad. <br><br> Estoy emocionada de seguir creciendo como profesional y colaborar en futuros proyectos emocionantes.<br><br>Aquí te dejo los medios por donde puedes contactarme:
+                </p>
+            </article>
+            <ul id="contact-links">
+                
+                <li>
+                    <a href="https://github.com/Amelissarc"  target="_blank" 
+                    aria-label= "ir al perfil de github">
+                    <img class="imagen" src="img/github.png" alt="Git Hub">
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.linkedin.com/in/melissarincon-frontend/" target="_blank" 
+                aria-label= "ir al perfil de linkedin">
+                <img class="imagen"  src="img/linkedin.png" alt="linkedin">
+            </a>
+        </li>   
+        
+        <li>
+            <a href="mailto:melissa.rinconft@gmail.com" target="_blank" 
+            aria-label= "Enviar mail">
+            <img class="imagen"  src="img/mail.png" alt="Email">
+        </a>
+    </li>    
+</ul>
+        </section>
+        
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="projects_hero animate__animated  animate__fadeInRight">
+            <article class="proyectos">
+                <h2 class="mainProyectos">Proyectos</h2>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="todo-tab" data-bs-toggle="tab" data-bs-target="#todo-tab-pane" type="button" role="tab" aria-controls="todo-tab-pane" aria-selected="true">Todo</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="web-tab" data-bs-toggle="tab" data-bs-target="#web-tab-pane" type="button" role="tab" aria-controls="web-tab-pane" aria-selected="false">Páginas web</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce-tab-pane" type="button" role="tab" aria-controls="ecommerce-tab-pane" aria-selected="false">Ecommerce</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="todo-tab-pane" role="tabpanel" aria-labelledby="todo-tab" tabindex="0">
+                        <div class="container text-center">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                <div class="col">
+                                    <a href="https://jaba-unity-design.vercel.app/" target="_blank">
+                                        <img src="./img/Captura web_9-6-2023_18451_jaba-unity-design.vercel.app.jpeg" alt="web" img-fluid  h-auto>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://aqua-refugio.vercel.app/" target="_blank">
+                                        <img src="/img/Captura web_9-6-2023_1873_aqua-refugio.vercel.app.jpeg" alt="web" img-fluid  h-auto>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://karya-yoga.vercel.app/" target="_blank">
+                                        <img src="/img/Captura web_9-6-2023_18643_karya-yoga.vercel.app.jpeg" alt="ecommerce" img-fluid  h-auto>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="tab-pane fade" id="web-tab-pane" role="tabpanel" aria-labelledby="web-tab" tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class="col">
+                                <a href="https://jaba-unity-design.vercel.app/" target="_blank">
+                                    <img src="./img/Captura web_9-6-2023_18451_jaba-unity-design.vercel.app.jpeg" alt="web" img-fluid  h-auto>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://aqua-refugio.vercel.app/" target="_blank">
+                                    <img src="/img/Captura web_9-6-2023_1873_aqua-refugio.vercel.app.jpeg" alt="web" img-fluid  h-auto>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="tab-pane fade" id="ecommerce-tab-pane" role="tabpanel" aria-labelledby="ecommerce-tab" tabindex="0">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                            <div class="col">
+                                <a href="https://karya-yoga.vercel.app/" target="_blank">
+                                    <img src="/img/Captura web_9-6-2023_18643_karya-yoga.vercel.app.jpeg" alt="ecommerce" img-fluid  h-auto>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>            
+        </section>
+
+       
+
+</main>
+
+<!--FOOTER  -->
+<footer> 
+   
+</footer>
+
+<script src="js/main.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+</html>
